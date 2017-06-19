@@ -5,23 +5,21 @@ import math
 import vtk.util.numpy_support, numpy
 import vtkSegmentationCorePython as vtkSegmentationCore
 
-class ModelUndercutRemoval:
+class UndercutRemover:
     def __init__(self, parent):
-        parent.title = "Model Undercut Removal"
+        parent.title = "Model Undercut Remover"
         parent.categories = ["Examples"]
         parent.dependencies = []
         parent.contributors = ["Patrick Moore"] # replace with "Firstname Lastname (Org)"
-        parent.helpText = """
-        Example of scripted loadable extension for the HelloPython tutorial.
-        """
-        parent.acknowledgementText = """Independently developed for the good of the world""" # replace with organization, grant and thanks.
+        parent.helpText = """   """
+        parent.acknowledgementText = """Impulse Dental Technologies LLC"""
         self.parent = parent
 
 #
 # qHelloPythonWidget
 #
 
-class ModelUndercutRemovalWidget:
+class UndercutRemoverWidget:
     def __init__(self, parent = None):
         if not parent:
             self.parent = slicer.qMRMLWidget()
